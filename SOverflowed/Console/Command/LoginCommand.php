@@ -13,7 +13,7 @@ class LoginCommand extends Command
 {
   protected $userConfig = array(
 				'email' => 'johndoe@example.com',
-				'password' => 'foobar1234')
+				'password' => 'foobar1234'
 				);
   
   protected function configure()
@@ -40,8 +40,8 @@ class LoginCommand extends Command
     $crawler = $client->submit(
 			       $form,
 			       array(
-				     'email' => $userConfig['email'],
-				     'password' => $userConfig['password'])
+				     'email' => $this->userConfig['email'],
+				     'password' => $this->userConfig['password'])
 			       );
     $errors = $crawler->filter('.message-error');
     if(!empty($errors)){

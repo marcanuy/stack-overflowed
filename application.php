@@ -8,5 +8,5 @@ use SOverflowed\Console\Command\LoginCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
-$application->add(new StackOverflowLoginCommand);
+$application->add(new LoginCommand);
 $application->run();
