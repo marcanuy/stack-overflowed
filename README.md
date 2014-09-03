@@ -3,6 +3,11 @@ stack-overflowed
 
 Stack Overflow commands from console
 
+Installing
+----------
+
+Execute `php composer.phar install`
+
 Login
 -----
 
